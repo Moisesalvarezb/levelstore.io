@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: black;
+}
+
+.desa{
+    text-align: center;
+    background-color: black;
+    color: gold;
+    margin-top: 7%;
+    font-size: 45px;
+    text-shadow: 0 0 5px gold,
+                0 0 25px gold,
+                0 0 50px gold,
+                0 0 200px gold;
+}
+
+.neon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 63vh;
+    background-color: #000;
+}
+
+h1 > a{
+    min-height: 0vh;
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px 25px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: gold;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .5s;
+    overflow: hidden;
+    margin-right: 70px;
+}
+
+a:hover{
+    background-color: gold;
+    color: #050801;
+    box-shadow: 0 0 5px gold,
+                0 0 25px gold,
+                0 0 50px gold,
+                0 0 200px gold;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+a:hover{
+    transform: scale(1.3);
+}
+
+a:first-child{
+    filter: hue-rotate(2deg);
+}
+
+
+
+
+a span{
+    display: block;
+    position: absolute;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 290px;
+    background: linear-gradient(90deg, transparent, gold);
+    animation: animate1 1s infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, gold);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+}
+@keyframes animate2 {
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, gold);
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animate3 {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right : 100%;
+    }
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, gold);
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+}
+
+@keyframes animate4 {
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+
+
+.boton-inicio {
+    max-width: 70px;
+    height: auto;
+    cursor: pointer;
+  }
